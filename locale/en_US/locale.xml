@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.default-child.name">Example Child Theme</message>
-	<message key="plugins.themes.default-child.description">This theme is an example of a child theme of the default theme.</message>
+	<message key="plugins.themes.ridu.name">RIDU Theme</message>
+	<message key="plugins.themes.ridu.description">RIDU theme</message>
 </locale>

@@ -16,8 +16,8 @@
  *
  */
 
-require_once('DefaultChildThemePlugin.inc.php');
+require_once('RiduThemePlugin.inc.php');
 
-return new DefaultChildThemePlugin();
+return new RiduThemePlugin();
 
 ?>

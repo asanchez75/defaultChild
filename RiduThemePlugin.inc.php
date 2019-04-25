@@ -14,7 +14,7 @@
  */
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class DefaultChildThemePlugin extends ThemePlugin {
+class RiduThemePlugin extends ThemePlugin {
 	/**
 	 * Initialize the theme's styles, scripts and hooks. This is only run for
 	 * the currently active theme.
@@ -22,8 +22,10 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return null
 	 */
 	public function init() {
-		$this->setParent('defaultthemeplugin');
-		$this->modifyStyle('stylesheet', array('addLess' => array('styles/remove-borders.less')));
+		$this->setParent('defaultmanuscriptchildthemeplugin');
+                // https://docs.pkp.sfu.ca/pkp-theming-guide/en/child-themes
+		//$this->modifyStyle('stylesheet', array('addLess' => array('styles/remove-borders.less')));
+                $this->addStyle('child-stylesheet', 'styles/index.less');
 	}
 
 	/**
@@ -31,7 +33,7 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.default-child.name');
+		return __('plugins.themes.ridu.name');
 	}
 
 	/**
@@ -39,7 +41,7 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.default-child.description');
+		return __('plugins.themes.ridu.description');
 	}
 }
 
