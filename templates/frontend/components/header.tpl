@@ -64,7 +64,7 @@
 							</a>
 						{/if}
 					{if $requestedOp == 'index'}
-						</h1></div><div class="pkp_logo_upc"> xxxx</div>
+						</h1></div><div class="pkp_logo_upc"><img src="{$baseUrl}/public/journals/1/logo-upc-rojo-60x60.png"></div>
 					{else}
 						</div>
 					{/if}
