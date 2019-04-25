@@ -39,7 +39,7 @@
 					{* Logo or site title. Only use <h1> heading on the homepage.
 					   Otherwise that should go to the page title. *}
 					{if $requestedOp == 'index'}
-						<h1 class="pkp_site_name">
+						<div class="pkp_logo_ridu"><h1 class="pkp_site_name">
 					{else}
 						<div class="pkp_site_name">
 					{/if}
@@ -64,7 +64,7 @@
 							</a>
 						{/if}
 					{if $requestedOp == 'index'}
-						</h1>
+						</h1></div><div class="pkp_logo_upc"> xxxx</div>
 					{else}
 						</div>
 					{/if}
